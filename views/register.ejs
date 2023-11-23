@@ -1,0 +1,54 @@
+<!-- views/register.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register</title>
+ 
+<style>
+   body{
+    background-color: rgb(160, 228, 206);
+   }
+    h1{
+        text-align: center;
+        color: rgb(212, 195, 10);
+        margin-top: 80px;
+    }
+    label{
+        font-size: 25px;
+        margin-left: 450px;
+        color: rgb(42, 165, 128);
+    }
+    #but{
+        margin-left: 550px;
+        margin-top: 30px;
+        font-size: 20px;
+        color: rgb(11, 107, 73);
+    }
+    /* button:hover{
+        color: rgb(41, 104, 14);
+    } */
+    p{
+        margin-left: 500px;
+        font-size: 20px;
+    }
+</style>
+</head>
+<body>
+
+   
+<h1>Register</h1>
+<form action="/auth/register" method="post">
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" required>
+<br>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required>
+<br>
+<button type="submit" id="but">Register</button>
+</form>
+<p>Already have an account? <a href="/auth/login">Login</a></p>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!-- views/login.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<title>Login</title>
+<style>
+    body{
+    background-color: rgb(160, 228, 206);
+   }
+    h1{
+        text-align: center;
+        color: brown;
+        margin-top: 80px;
+    }
+    label{
+        font-size: 25px;
+        margin-left: 450px;
+        color: rgb(42, 165, 85);
+    }
+    #but{
+        margin-left: 550px;
+        margin-top: 30px;
+        font-size: 20px;
+        color: rgb(84, 210, 30);
+    }
+    button:hover{
+        color: rgb(41, 104, 14);
+    }
+    p{
+        margin-left: 500px;
+        font-size: 20px;
+    }
+</style>
+</head>
+<body>
+
+   
+
+<h1>Login</h1>
+<form action="/auth/login" method="post">
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" required>
+<br>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required>
+<br>
+<button type="submit" id="but">Login</button>
+</form>
+<p>Don't have an account? <a href="/auth/register">Register</a></p>
+
+</body>
+</html>
